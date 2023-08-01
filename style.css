@@ -20,7 +20,7 @@
     --c-black:#2a2b2a;
 }
 .container{
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -42,6 +42,8 @@ nav ul{
 nav ul li{
     list-style: none;
     margin-right: 75px;
+    transition: .5s;
+    padding-bottom: 5px;
 }
 nav ul li a{
     text-decoration: none;
@@ -49,6 +51,10 @@ nav ul li a{
     font-family: 'Open Sans', sans-serif;
     color: black;
     text-transform: capitalize;
+}
+nav ul li:hover{
+    transform: translateY(-6px);
+    border-bottom: 1px solid #1de91d;
 }
 nav ul li:last-child{
     margin-right: 0;
@@ -85,11 +91,17 @@ header{
     text-transform: uppercase;
     font-family: myriad-bold;
     border-radius: 50px;
+    transition: .5s;
+}
+.btn-header:hover{
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
 }
 .prev-next{
     display: flex;
     justify-content: center;
-    margin-top: -25px;
 }
 .prev,.next{
     display: flex;
@@ -101,10 +113,19 @@ header{
     color: white;
     font-size: var(--font-info);
     border-radius: 100%;
+    margin-top: -25px;
+    transition: .5s;
 }
 .prev{
     background-color: var(--c-green);
     margin-right: 5px;
+}
+.prev:hover,.next:hover{
+    width: 35px;
+    height: 35px;
+    margin-top: -15px;
+    font-size: 12px;
+    cursor: pointer;
 }
 
 /* ---------- about us ---------- */
@@ -140,6 +161,13 @@ header{
     font-size: var(--font-info);
     border: none;
     text-transform: capitalize;
+    transition: .5s;
+}
+.read-more:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
 }
 .img-about{
     margin-top: 196px;
@@ -177,6 +205,12 @@ header{
 }
 .pic-o-s{
     margin-right: 270px;
+}
+.pic-o-s{
+    transition: .5s;
+}
+.pic-o-s:hover{
+    transform: scale(1.1);
 }
 .pic-o-s:last-child{
     margin-right: 0;
@@ -231,6 +265,11 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: .5s;
+}
+.content-gallery:hover{
+    transform: translateY(-15px);
+    box-shadow: 2px 2px 12px 6px rgba(0, 0, 0, 0.1);
 }
 .content-gallery span{
     font-family: myriad-bold;
@@ -244,7 +283,7 @@ header{
     line-height: 1.5em;
 }
 
-/* ---------- new ldeas design ---------- */
+/* ---------- new ideas design ---------- */
 .group-new-ideas{
     display: flex;
     justify-content: end;
@@ -284,11 +323,19 @@ header{
     background-color: var(--c-black);
     font-size: 30px;
     color: white;
+    transition: .5s;
 }
 .btn-n{
     background-color: var(--c-green);
     color: black;
     margin-left: 20px;
+}
+.btn-p:hover,.btn-n:hover{
+    width: 52px;
+    height: 46px;
+    margin-top: 15px;
+    font-size: 17px;
+    cursor: pointer;
 }
 .img-new-ideas{
     position: relative;
@@ -385,6 +432,13 @@ header{
 .l-c-s span{
     margin-right: 7px;
 }
+.l-c-s{
+    transition: .5s;
+}
+.l-c-s:hover{
+    transform: translateX(5px);
+    cursor: pointer;
+}
 /* ---------- testimonial ---------- */
 .testimonial{
     display: flex;
@@ -413,6 +467,10 @@ header{
     height: 360px;
     border-radius: 5px;
     margin: 0 64px 40px 0;
+    transition: .5s;
+}
+.info-tmn:hover{
+    transform: scale(1.05);
 }
 .info-tmn:first-child{
     margin-right: 20px;
@@ -488,8 +546,11 @@ input:nth-child(7){
     color: white;
     font-size: 22px;
     font-family: myriad-bold;
+    transition: .5s;
 }
-
+.input-ct input[type="submit"]:hover{
+    transform: translateX(10px);
+}
 /* ---------- footer ---------- */
 .footer{
     width: 100%;
@@ -524,6 +585,12 @@ input:nth-child(7){
     text-transform: capitalize;
     line-height: 1.5em;
 }
+.info-ft ul li{
+    transition: .5s;
+}
+.info-ft ul li:hover{
+    transform: translateX(-5px) translateY(-2px);
+}
 .icon-ft i{
     padding-top: 8px;
     text-align: center;
@@ -533,6 +600,10 @@ input:nth-child(7){
     background-color: white;
     color: black;
     margin-right: 3px;
+    transition: .5s;
+}
+.icon-ft i:hover{
+    transform: translateY(-5px);
 }
 .ft{
     text-align: center;
@@ -553,6 +624,7 @@ input:nth-child(7){
     padding: 0;
     border-radius: 0;
     border-bottom: 1px solid white;
+    color: white;
 }
 .sub input[type="submit"]{
     color: white;
@@ -561,4 +633,8 @@ input:nth-child(7){
     font-family: myriad-bold;
     font-size: 16px;
     margin-left: -85px;
+    transition: .5s;
+}
+.sub input[type="submit"]:hover{
+    transform: translateY(-5px);
 }
